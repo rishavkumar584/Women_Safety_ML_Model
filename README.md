@@ -5,14 +5,69 @@ and logs the event with a timestamp. Made as an AI-powered safety alert system, 
 The model was trained upon a total of 2307 human face images( 1173 male + 1134 female ) for better recognization & differentiation of men and women.
 
 ## Porject Features
-- **Live Webcam Feed Monitoring** using OpenCV.
+- Real-time gender detection using OpenCV and a trained CNN model.
 - Counts the no. of people ( no. of men and no. of woman in the frame ).
 - Detects alone woman surrounded by men.
 - Detects the **HELP!** hand gesture.
 - Generates log incase help symbol is initiated by woman.
-- The generated log is read by simple webpage interface for better representation.
+- The generated log is read by a live web dashboard interface for better representation, having an auto-refreshing UI every 30 seconds to stay up to date.
+- Time-stamped detection entries with controlled intervals.
 
-  ## Future updates
+## Model DEtails
+**Framework:** TensorFlow /Keras
+**Architecture:** CNN with BathcNormalization, Dropout, MaxPooling
+**Training Data:** Labeled images
+**Output:** Binary classification: 0(man), 1(woman).
+
+## Project Struture
+
+├── main.py                 # Real-time detection and Excel logging
+├── train.py                # CNN model training script
+├── gender_detection.h5     # Trained gender classification model
+├── detection_log.xlsx      # Excel sheet to log detection events
+├── webpage.html            # Web UI to display detection logs
+└── shield.jpg              # Logo used in the UI
+
+## Getting Started
+
+**1. Clone the repository**
+*git clone https://github.com/yourusername/Shield_Her.git
+cd Shield_Her*
+
+**2. Install the Dependencies**
+*pip install tensorflow opencv-python numpy pandas openpyxl flask*
+
+**3. Train the Model**
+*python train.py*
+
+Ensure you have the dataset in this structure:
+gender_dataset_face/
+├── man/
+│   └── image1.jpg
+├── woman/
+    └── image2.jpg
+
+**4. Run Real-time Detection**
+*python main.py*
+
+**5. View Live Dashboard**
+*Open webpage.html on your local server, Make sure detection_log.xlsx is in the same directory.*
+
+## Dependencies
+- TensorFlow/Keras
+- OpenCV
+- NumPy, Pandas
+- Matplotlib
+- openpyxl
+- xlsx.full.min.js
+
+## Use Cases
+- Public surveillance systems
+- Safety monitoring in transportation
+- Integration with emergency alert systems
+- Gender-specific analytics for crowd monitoring
+
+## Future updates
   Configuring with real time location capture.
   Sending of alert msgs on family & nearest police station by detecting womans information from face detection.
   Improving further to detect face expression & voice captures methods to avoid the need of requiring the help gesture notation.
