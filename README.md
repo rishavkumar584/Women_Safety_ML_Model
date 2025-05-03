@@ -21,12 +21,12 @@ The model was trained upon a total of 2307 human face images( 1173 male + 1134 f
 
 ## Project Struture
 
-├── main.py                 # Real-time detection and Excel logging
-├── train.py                # CNN model training script
-├── gender_detection.h5     # Trained gender classification model
-├── detection_log.xlsx      # Excel sheet to log detection events
-├── webpage.html            # Web UI to display detection logs
-└── shield.jpg              # Logo used in the UI
+- ├── main.py                 # Real-time detection and Excel logging
+- ├── train.py                # CNN model training script
+- ├── gender_detection.h5     # Trained gender classification model
+- ├── detection_log.xlsx      # Excel sheet to log detection events
+- ├── webpage.html            # Web UI to display detection logs
+- └── shield.jpg              # Logo used in the UI
 
 ## Getting Started
 
