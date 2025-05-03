@@ -59,8 +59,8 @@ gender_dataset_face/
 - ├── woman/
   - └── image2.jpg
 
-**Note**
-*The dataset used for training is not uploaded due to unclear licensing and ethical concerns.*
+**Note:**
+*The dataset used for training is not uploaded due to unclear licensing and ethical concerns. But you can use your own dataset to validate the model, Thankyou*
 
 **4. Run Real-time Detection**
 
