@@ -59,6 +59,9 @@ gender_dataset_face/
 - ├── woman/
   - └── image2.jpg
 
+**Note**
+*The dataset used for training is not uploaded due to unclear licensing and ethical concerns.*
+
 **4. Run Real-time Detection**
 
 *python main.py*
