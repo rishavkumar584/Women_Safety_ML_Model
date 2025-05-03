@@ -15,8 +15,11 @@ The model was trained upon a total of 2307 human face images( 1173 male + 1134 f
 
 ## Model Details
 **Framework:** TensorFlow /Keras
+
 **Architecture:** CNN with BathcNormalization, Dropout, MaxPooling
+
 **Training Data:** Labeled images
+
 **Output:** Binary classification: 0(man), 1(woman).
 
 ## Project Struture
