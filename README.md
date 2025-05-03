@@ -13,7 +13,7 @@ The model was trained upon a total of 2307 human face images( 1173 male + 1134 f
 - The generated log is read by a live web dashboard interface for better representation, having an auto-refreshing UI every 30 seconds to stay up to date.
 - Time-stamped detection entries with controlled intervals.
 
-## Model DEtails
+## Model Details
 **Framework:** TensorFlow /Keras
 **Architecture:** CNN with BathcNormalization, Dropout, MaxPooling
 **Training Data:** Labeled images
@@ -31,8 +31,8 @@ The model was trained upon a total of 2307 human face images( 1173 male + 1134 f
 ## Getting Started
 
 **1. Clone the repository**
-*git clone https://github.com/yourusername/Shield_Her.git
-cd Shield_Her*
+*git clone https://github.com/rishavkumar584/Women_Safety_ML_Model.git*
+*cd Shield_Her*
 
 **2. Install the Dependencies**
 *pip install tensorflow opencv-python numpy pandas openpyxl flask*
@@ -42,10 +42,10 @@ cd Shield_Her*
 
 Ensure you have the dataset in this structure:
 gender_dataset_face/
-├── man/
-│   └── image1.jpg
-├── woman/
-    └── image2.jpg
+- ├── man/
+- │   └── image1.jpg
+- ├── woman/
+-   └── image2.jpg
 
 **4. Run Real-time Detection**
 *python main.py*
